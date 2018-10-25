@@ -9,13 +9,39 @@
 </head>
 
 <body>
-    <h1>Tjekliste for programmeringsafleveringer på MDU</h1>
-    <p>Her er en liste over ting som I kan krydse af når I føler I er ved at være klar til at aflevere jeres hjemmeside</p>
+    <header>
+        <h1>Tjekliste for programmeringsafleveringer på MDU</h1>
+    </header>
+    <main>
+        <p>Her er en liste over ting som I kan krydse af når I føler I er ved at være klar til at aflevere jeres hjemmeside:</p>
 
-    <input type="checkbox"> Validering af html på validator.w3.org<br>
-    <input type="checkbox">Filnavngivning - ingen mellemrum, specialtegn, æ, ø eller å<br>
-    <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
+        <ul>
+            <li><input type="checkbox">Validering af html (samtlige sider) på <a href="validator.w3.org">validator.w3.org</a></li>
+            <li><input type="checkbox">Validering af css på <a href="http://jigsaw.w3.org/css-validator/">http://jigsaw.w3.org/css-validator/</a> </li>
+            <li><input type="checkbox">Filnavngivning - ingen mellemrum, specialtegn, store bogstaver, æ, ø eller å. Brug bindestreg imellem flere ord.</li>
+            <li><input type="checkbox">SEO: Forskellige titles til alle sider</li>
+            <li> <input type="checkbox">SEO: Udfyldte, forskellige meta descriptions på alle sider - i content=""</li>
+            <li><input type="checkbox">Semantiske tags - f.eks. header, nav, main, footer, aside, article og section - spar på divs! </li>
+            <li><input type="checkbox">Responsive Web Design: Har du media queries?</li>
+            <li><input type="checkbox">Responsive Web Design: Er din menu responsiv?</li>
+            <li><input type="checkbox">Performance: Har du komprimeret dine billeder, så de fylder så lidt som muligt? Helst under 100kb. Tjek din pageload time. f.eks. på <a href="https://developers.google.com/speed/pagespeed/insights/">google pagespeedinsights</a>.
+            </li>
+            <li><input type="checkbox">Har du husket at indsætte en robots.txt-fil, hvis siden ikke må indekseres i søgemaskinerne?</li>
+            <li><input type="checkbox">Responsive Web Design:Er dine billeders width angivet i %? </li>
+            <li><input type="checkbox">Undgå embedded stylesheet - dvs. styling i head-delen. Al styling skal ligge i css.</li>
+        </ul>
 
+
+        <button onclick="myFunction()">Udskriv denne side</button>
+    </main>
+    <footer>Ingen copyright - værsgo at kopiere &#9786;</footer>
+
+    <script>
+        function myFunction() {
+            window.print();
+        }
+
+    </script>
 </body>
 
 </html>
